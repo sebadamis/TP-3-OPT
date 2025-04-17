@@ -1,6 +1,6 @@
 import React from 'react';
 import "./NavBar.css";
-import toggleMobileMenu from './navBar';
+
 import { NavLink } from 'react-router';
 
 
@@ -10,27 +10,31 @@ function NavBar() {
     return (
         <>
             <nav>
-                <ul id="menu">
+                <input id="nav-toggle" type="checkbox" />
+                <div className="logo">
+                    <strong>NAVBAR</strong>
+                </div>
+                <ul className="links">
                     <li>
-                        <NavLink to={"/"}>Home</NavLink>
+                    <NavLink to={"/"}>Home</NavLink>
                     </li>
                     <li>
-                        {/* <a href="#">About</a> */}
-                        <NavLink to={"/About"}>About</NavLink>
+                    <NavLink to={"/About"}>About</NavLink>
                     </li>
                     <li>
-                        <a href="#">nada</a>
+                    <NavLink to={"/Contact"}>Contact</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/Contact"}>Contact</NavLink>
+                    <NavLink to={"/ProductDetail"}>Product-Detail</NavLink>
                     </li>
                 </ul>
-                <div className="mobile-bar" onClick={toggleMobileMenu}>
-                    <span />
-                    <span />
-                    <span />
-                </div>
+                <label htmlFor="nav-toggle" className="icon-burger">
+                    <div className="line" />
+                    <div className="line" />
+                    <div className="line" />
+                </label>
             </nav>
+
         </>
     )
 }
