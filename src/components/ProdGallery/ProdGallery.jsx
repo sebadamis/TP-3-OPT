@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Productos from '../Productos/Productos'
 import { getProducts } from '../../services/prodservices';
+import "./ProdGallery.css";
 
 
 
@@ -26,7 +27,7 @@ export const ProdGallery = () => {
                 }
                 setLoading(false)
             },
-            2000
+            1500
         )
 
     }
@@ -66,7 +67,7 @@ export const ProdGallery = () => {
     return (
         <>
             
-                <div>
+                <div id='content'>
                 
 
                     {content}
