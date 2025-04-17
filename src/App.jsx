@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
-import { ProdGallery } from './componets/ProdGallery/ProdGallery';
+import Home from './Pages/Home/Home'
+
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       
-        <ProdGallery/>
+        <Home/>
     
     </>
   )

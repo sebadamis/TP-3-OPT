@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Productos.css";
-import BotonComprar from '../BotonComprar/BotonComprar';
+import BotonComprar from '../BotonCompra/BotonCompra';
 
 const Productos = ({id, titulo, descripcion, img, descuento, stock, categoria, precioAntes, precioFinal}) => {
 
