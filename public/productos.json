@@ -1,0 +1,25 @@
+
+[ 
+    {
+        "titulo": "Ratón a cuerda",
+        "categoria": "Juguetes",
+        "precioAntes": 3000,
+        "descripcion": "Juguete para chicos de 4 a 6 años",
+        "descuento": "-20%",
+        "stock": 5,
+        "precioFinal": 2500,
+        "id": 1,
+        "img": "../src/assets/producto.png"
+    },
+    {
+        "titulo": "Ratón a cuerda",
+        "categoria": "Juguetes",
+        "precioAntes": 4000,
+        "descripcion": "lorem ipsum 442",
+        "descuento": "-30%",
+        "stock": 5,
+        "precioFinal": 2500,
+        "id": 2,
+        "img": "../src/assets/producto.png"
+    }
+]
