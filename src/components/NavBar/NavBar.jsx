@@ -1,32 +1,31 @@
 import React from 'react';
 import "./NavBar.css";
 import toggleMobileMenu from './navBar';
+import { NavLink } from 'react-router';
 
 
 function NavBar() {
 
-
-    
-    
 
     return (
         <>
             <nav>
                 <ul id="menu">
                     <li>
-                    <a href="#">Home</a>
+                        <NavLink to={"/"}>Home</NavLink>
                     </li>
                     <li>
-                    <a href="#">About</a>
+                        {/* <a href="#">About</a> */}
+                        <NavLink to={"/About"}>About</NavLink>
                     </li>
                     <li>
-                    <a href="#">Features</a>
+                        <a href="#">nada</a>
                     </li>
                     <li>
-                    <a href="#">Contact</a>
+                        <NavLink to={"/Contact"}>Contact</NavLink>
                     </li>
                 </ul>
-                 <div className="mobile-bar" onClick={toggleMobileMenu}> {/*onclick="toggleMobileMenu()"; */}
+                <div className="mobile-bar" onClick={toggleMobileMenu}>
                     <span />
                     <span />
                     <span />
