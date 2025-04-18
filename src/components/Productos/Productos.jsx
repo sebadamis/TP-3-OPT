@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Productos.css";
 import BotonComprar from '../BotonCompra/BotonCompra';
+import { NavLink } from 'react-router';
 
-const Productos = ({id, titulo, descripcion, img, descuento, stock, categoria, precioAntes, precioFinal}) => {
+export const Productos = ({id, titulo, descripcion, img, descuento, stock, categoria, precioAntes, precioFinal}) => {
 
 
 
@@ -116,7 +117,10 @@ const Productos = ({id, titulo, descripcion, img, descuento, stock, categoria, p
                     </p>
                     </div>
                     <div className="button">
-                    <BotonComprar type="button">COMPRAR</BotonComprar>
+                        <BotonComprar type="button">COMPRAR</BotonComprar>
+                    </div>
+                    <div className="btnMoreInfo button">
+                        <NavLink to={`/products/${id}`}><button>Ver detalle</button></NavLink>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,11 @@
 import React from 'react'
 import "./Contact.css"
-import NavBar from '../../components/NavBar/NavBar'
+
 
 function Contact() {
     return (
         <>
         
-            <NavBar/>
 
             <main className="main-container">
                 <section className="contact-section">

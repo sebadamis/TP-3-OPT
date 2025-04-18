@@ -1,11 +1,15 @@
 import React from 'react'
-import './App.css'
+import './global.css'
 import { Route, Routes } from 'react-router'
+
+import NavBar from './components/NavBar/NavBar'
 
 import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
 import ProductDetail from './Pages/ProductDetail/ProductDetail'
-import About from './Pages/About/About'
+
+
+
 
 
 function App() {
@@ -13,15 +17,16 @@ function App() {
 
   return (
     <>
-      
+
+        <NavBar/>
 
         <Routes>
 
           <Route path='/' element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
-          <Route path='Product/:ProductId' element={<ProductDetail/>}/>
-          <Route path='/About' element={<About/>}/>
-          <Route path='/ProductDetail' element={<ProductDetail/>}/>
+          <Route path='/products/:prod_id' element={<ProductDetail/>}/>
+
+          {/* <Route path='/ProductDetail' element={<ProductDetail/>}/> */}
 
         </Routes>
 

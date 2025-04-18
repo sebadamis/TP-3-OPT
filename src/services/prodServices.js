@@ -14,3 +14,8 @@ export const getProducts = async () =>{
         return null
     }
 }
+
+export const getProdById = async ({prod_id}) => {
+    const products = await getProducts();
+    return products.find(product => product.id == prod_id)
+}
