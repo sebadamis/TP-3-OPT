@@ -6,8 +6,8 @@ const ProdDetailCard = ({id, titulo, descripcion, img, descuento, stock, categor
     return (
         <>
 
-        <div className="max-container">
-            <main>
+        <html className="max-container">
+            <main className='proddetailcard'>
                 <div className="card-detail">
                     <div className="card__title">
                         <h3>Info del Producto</h3>
@@ -15,8 +15,8 @@ const ProdDetailCard = ({id, titulo, descripcion, img, descuento, stock, categor
                     <div className="card__body">
                         <div className="half">
                             <div className="featured_text">
-                            <h1>{titulo}</h1>
-                            <p className="sub">{categoria}</p>
+                            <h3>{titulo}</h3>
+                            <p className="sub">Categoria: {categoria}</p>
                             
                             </div>
                             <div className="image">
@@ -38,22 +38,19 @@ const ProdDetailCard = ({id, titulo, descripcion, img, descuento, stock, categor
                             </div>
 
                             <div className="recommend">
-                            <p>Antes: {precioAntes}</p>
-                            <p>Descuento: {descuento}</p>
-                            <h3>Precio: {precioFinal}</h3>
+                                <p>Antes: {precioAntes}</p>
+                                <p>Descuento: {descuento}</p>
+                                <h3>Precio: {precioFinal}</h3>
                             </div>
 
+                            <div className="action">
+                                <button className='cart-btn' type="button">Add to cart</button>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card__footer">
-                    
-                    <div className="action">
-                        <button className='cart-btn' type="button">Add to cart</button>
-                    </div>
                     </div>
                 </div>
             </main>
-        </div>
+        </html>
 
 
         

@@ -10,9 +10,6 @@ function Home() {
     return (
         <>
 
-
-            <h1>lista de productos</h1>
-
             <ProdGallery/>
 
         </>

@@ -1,19 +1,24 @@
 
 
 .max-container {
-    background-image: linear-gradient(to right bottom, #b91eda, #a02ae0, #8234e5, #5d3be8, #1241eb);
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-main {
-    max-width: 720px;
+.proddetailcard {
+    max-width: 800px;
     margin: 5% auto;
 }
-.card__title h3 {
-    display: inline-flex;
+
+.card__title {
+    display: flex;
     text-align: center;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
 }
 .card-detail {
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
@@ -26,8 +31,8 @@ main {
     padding: 30px 40px;
 }
 .card-detail .card__title h3 {
-    flex: 0 1 200px;
-    text-align: right;
+    /* flex: 0 1 200px; */
+    text-align: center;
     margin: 0;
     color: #252525;
     font-family: sans-serif;
@@ -57,13 +62,13 @@ main {
     padding: 0 15px;
     flex: 1 0 50%;
 }
-.card-detail .card__body .featured_text h1 {
+.card-detail .card__body .featured_text h3 {
     margin: 0;
     padding: 0;
     font-weight: 800;
     font-family: "Montserrat", sans-serif;
-    font-size: 64px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 30px;
     color: #181e28;
 }
 .card-detail .card__body .featured_text p {
@@ -72,9 +77,9 @@ main {
 }
 .card-detail .card__body .featured_text p.sub {
     font-family: "Montserrat", sans-serif;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #686e77;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    color: #5e6267;
     font-weight: 300;
     margin-bottom: 5px;
 }
@@ -84,7 +89,7 @@ main {
     font-size: 26px;
 }
 .card-detail .card__body .image {
-    padding-top: 15px;
+    padding-top: 20px;
     width: 100%;
 }
 .card-detail .card__body .image img {
@@ -108,75 +113,7 @@ main {
     font-weight: 600;
     color: #a1cc16;
 }
-.card-detail .card__body .reviews .stars {
-    display: inline-block;
-    list-style: none;
-    padding: 0;
-}
-.card-detail .card__body .reviews .stars > li {
-    display: inline-block;
-}
-.card-detail .card__body .reviews .stars > li .fa {
-    color: #f7c01b;
-}
-.card-detail .card__body .reviews > span {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    margin-left: 5px;
-    color: #555;
-}
-.card-detail .card__footer {
-    padding: 30px 40px;
-    display: flex;
-    flex-flow: row no-wrap;
-    align-items: center;
-    position: relative;
-}
-.card-detail .card__footer::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 40px;
-    width: calc(100% - 40px);
-    height: 3px;
-    background: #115dd8;
-    background: linear-gradient(to right, #115dd8 0%, #115dd8 20%, #ddd 20%, #ddd 100%);
-}
-.card-detail .card__footer .recommend {
-    flex: 1 0 10px;
-}
-.card-detail .card__footer .recommend p {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    color: #555;
-}
-.card-detail .card__footer .recommend h3 {
-    margin: 0;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #115dd8;
-}
-.card-detail .card__footer .action button {
-    cursor: pointer;
-    border: 1px solid #115dd8;
-    padding: 14px 30px;
-    border-radius: 200px;
-    color: #fff;
-    background: #115dd8;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    transition: 200ms;
-}
-.card-detail .card__footer .action .cart-btn:hover {
-    background: #fff;
-    color: #115dd8;
-}
+
 
 .action {
     display: flex;
@@ -185,6 +122,7 @@ main {
 
 .cart-btn {
     background-color: #3058ea;
+    margin: 25px auto;
 }
 
 .cart-btn:hover {

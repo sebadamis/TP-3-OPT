@@ -52,7 +52,7 @@ export const ProdGallery = () => {
     )
     let content
     if (loading) {
-        content = <h2>Cargando...</h2>
+        content = <h2 className='loadin-msg'>Cargando...</h2>
     }
     else {
         if (error) {
@@ -69,7 +69,6 @@ export const ProdGallery = () => {
             
                 <div id='content'>
                 
-
                     {content}
 
                 </div>

@@ -15,7 +15,8 @@ nav {
     font-family: "Montserrat", sans-serif;
     padding: 0 5%;
     height: 50px;
-    background-color: #3e65da;
+    /* background-color: #3e65da; */
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 nav .logo {
     float: left;
