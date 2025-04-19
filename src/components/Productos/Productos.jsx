@@ -15,14 +15,14 @@ export const Productos = ({id, titulo, descripcion, img, descuento, stock, categ
             <div id="card">
                 <div className="card">
                     <div className="card-image">
-                    <img
-                        className="img"
-                        src={img}
-                        alt={id}
-                    />
+                        <img
+                            className="img"
+                            src={img}
+                            alt={id}
+                        />
                     </div>
                     <div className="card-title">
-                    <h2>{titulo}</h2>
+                        <h2>{titulo}</h2>
                     </div>
                     <div className="card-detail">
                         <h3>
@@ -118,10 +118,11 @@ export const Productos = ({id, titulo, descripcion, img, descuento, stock, categ
                     </div>
                     <div className="button">
                         <BotonComprar type="button">COMPRAR</BotonComprar>
-                    </div>
-                    <div className="btnMoreInfo button">
                         <NavLink to={`/products/${id}`}><button>Ver detalle</button></NavLink>
                     </div>
+                    {/* <div className="btnMoreInfo button">
+                        <NavLink to={`/products/${id}`}><button>Ver detalle</button></NavLink>
+                    </div> */}
                 </div>
             </div>
 

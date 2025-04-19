@@ -20,6 +20,10 @@
 
 }
 
+.card {
+    background-color: rgb(88, 107, 214);
+}
+
 .card-image {
     height: 100%;
     width: auto;
@@ -175,7 +179,7 @@
 }
 .button {
     margin: 0 auto;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

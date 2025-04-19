@@ -19,13 +19,10 @@ function NavBar() {
                     <NavLink to={"/"}>Home</NavLink>
                     </li>
                     <li>
-                    <NavLink to={"/About"}>About</NavLink>
-                    </li>
-                    <li>
                     <NavLink to={"/Contact"}>Contact</NavLink>
                     </li>
                     <li>
-                    <NavLink to={"/ProductDetail"}>Product-Detail</NavLink>
+                    <NavLink to={"/Login"}>Login</NavLink>
                     </li>
                 </ul>
                 <label htmlFor="nav-toggle" className="icon-burger">

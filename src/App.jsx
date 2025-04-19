@@ -7,6 +7,7 @@ import NavBar from './components/NavBar/NavBar'
 import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
 import ProductDetail from './Pages/ProductDetail/ProductDetail'
+import Login from './Pages/Login/Login'
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/products/:prod_id' element={<ProductDetail/>}/>
+          <Route path='/login' element={<Login/>}/>
 
           {/* <Route path='/ProductDetail' element={<ProductDetail/>}/> */}
 
