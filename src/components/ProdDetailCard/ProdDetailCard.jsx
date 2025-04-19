@@ -6,7 +6,7 @@ const ProdDetailCard = ({id, titulo, descripcion, img, descuento, stock, categor
     return (
         <>
         
-        <div className="container">
+            <div className="container">
                 <div className="product-container main-product-container">
                     <div className="product-left-container">
                         <img
@@ -21,7 +21,7 @@ const ProdDetailCard = ({id, titulo, descripcion, img, descuento, stock, categor
                         <p>
                             <b>{categoria}</b>
                             <br />
-                            {descripcion}
+                            
                         </p>
                         <p className="product-price">
                             <b>Pris:</b>
@@ -42,7 +42,7 @@ const ProdDetailCard = ({id, titulo, descripcion, img, descuento, stock, categor
                 <br clear="all" />
                 <div className="product-container">
                     <div className="product-left-container">
-                        <h2 className="product-page">Detaljer</h2>
+                        <h2 className="product-page">{descripcion}</h2>
                         <p className="product-body">
                             Mini høyttaler med meget godt lyd for PC/mobil/smart med innbygd
                             FM-radio. Perfekt at ha med på hytten, tur, i teltet, parken eller bare
