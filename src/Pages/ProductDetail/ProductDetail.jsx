@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./ProductDetail.css"
 import { useParams } from 'react-router'
 import { getProdById } from '../../services/prodservices';
+import ProdDetailCard from '../../components/ProdDetailCard/ProdDetailCard';
 
 
 function ProductDetail() {
@@ -48,14 +49,15 @@ function ProductDetail() {
             content = <h1>{error}</h1>
         }
         else {
-            content = <div>producto: {product.titulo}</div>
+            content = <ProdDetailCard {...product}/>
         }
     }
 
     return (      
         <>
         
-            <div className="container">
+            {content}
+            {/* <div className="container">
                 <div className="product-container main-product-container">
                     <div className="product-left-container">
                         <img
@@ -108,7 +110,7 @@ function ProductDetail() {
                     <div className="product-col-container">Col</div>
                 </div>
                 <br clear="all" />
-            </div>
+            </div> */}
 
         </>
     )
