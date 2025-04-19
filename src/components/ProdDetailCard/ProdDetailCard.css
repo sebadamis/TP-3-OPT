@@ -114,10 +114,25 @@
     color: #a1cc16;
 }
 
+.stock {
+    display: inline-block;
+    margin-top: 50px;
+    
+}
+.description {
+    display: flexbox;
+    /* margin-top: 50px; */
+}
+.recommend {
+    display: flex;
+    float: right;
+}
+
 
 .action {
     display: flex;
-    width: 70%;
+    width: 80%;
+    
 }
 
 .cart-btn {
